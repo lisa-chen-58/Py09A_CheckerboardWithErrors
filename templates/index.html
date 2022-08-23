@@ -10,31 +10,31 @@
         <title>Playground</title>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-<!-- <style>
-        .{{color1}}{
-            background-color: {{color1}};
-        }
-        .{{color2}}{
-            background-color: {{color2}};
-        }
-
-    </style> -->
-
 </head>
-<body>
-    <div class="text-center">
-        <h1 class="text-center text-light bg-dark">Hello</h1>
-        <p>INPUTS</p>
-        <p>Row value: {{row}}</p>
-        <p>Column value: {{col}}</p>
-        <p>Color1 value: {{color1}}</p>
-        <p>Color2 value: {{color2}}</p>
+<body class="bg-dark">
+    <div class="text-center text-light">
+        <br><br>
+        <h1 class="text-center text-warning">Fix this Error!</h1>
+        <br>
+        <h5>This has now been fixed. The issue was that line 13 in the index.html had the following line to link CSS:</h5>
+        <h5>
+            <em>" < link rel=stylesheet href=../static/style.css > " </em>
+        </p>
+        <h5>However, this has since been corrected to remove the two dots preceding /:</h5>
+        <h5>
+            <em>" < link rel=stylesheet href=/static/style.css > " </em>
+        </p>
+        <hr>
+        <h3 class="text-warning">INPUTS</h3>
+        <h5>Row value: {{row}}</h5>
+        <h5>Column value: {{col}}</h5>
+        <h5>Color1 value: {{color1}}</h5>
+        <h5>Color2 value: {{color2}}</h5>
     </div>
     {% for i in range(row): %}
     <div class="row">
